@@ -1,3 +1,5 @@
+package Contest
+
 class Main {
     val catFuzz = Cat("Fuzz Lightyear")
     val catKatsu = Cat("Katsu")
@@ -26,9 +28,9 @@ class Main {
     val topPet = petContest.getWinners().first()
     val topFish = fishContest.getWinners().first()
 
-    println("Cat contest winner is ${topCat.name}")
-    println("Pet contest winner is ${topPet.name}")
-    println("Fish contest winner is ${topFish.name}")
+    println("Contest.Contest.Cat contest winner is ${topCat.name}")
+    println("Contest.Pet contest winner is ${topPet.name}")
+    println("Contest.Fish contest winner is ${topFish.name}")
 
     val dogRetailer: Retailer<Dog> = DogRetailer()
     val catRetailer: Retailer<Cat> = CatRetailer()
