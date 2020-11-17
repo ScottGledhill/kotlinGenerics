@@ -1,5 +1,5 @@
-class Contest<T: Pet> {
-    val scores: MutableMap<T, Int> = mutableMapOf() // T is generic type of Pet that the contest is dealing with
+class Contest<T: Pet>(var vet: Vet<in T>) {
+    private val scores: MutableMap<T, Int> = mutableMapOf() // T is generic type of Pet that the contest is dealing with
 
     fun addScore(t: T, score:Int = 0) {
         if (score >= 0) scores.put(t, score)
